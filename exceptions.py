@@ -1,0 +1,2 @@
+class AlphaException(Exception):
+    pass
