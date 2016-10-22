@@ -20,7 +20,6 @@ def message(command, parameters):
     length = len(parameters) + 5
     min_parameter = min([ord(x) for x in parameters])
     check = bytes([sum([ord(command), length, min_parameter])])
-
     return header+bytes([length])+command+parameter+check+end
 
 if __name__ == '__main__':
